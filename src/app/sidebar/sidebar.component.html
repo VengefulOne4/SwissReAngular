@@ -1,0 +1,5 @@
+<div class="sidebar">
+  <ul>
+    <li *ngFor="let person of peopleService.people$ | async">{{ person }}</li>
+  </ul>
+</div>

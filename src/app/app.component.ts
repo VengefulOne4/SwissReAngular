@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { PeopleService } from './people.service';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'chat';
+  people: number[] = [1]; // Исходный список "person", начнем с одного "person"
+  
+  constructor(public peopleService: PeopleService) {}
 }

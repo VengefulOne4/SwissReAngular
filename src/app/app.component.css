@@ -1,0 +1,28 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 16px;
+}
+  
+.grid-item {
+    border: 1px solid #ccc;
+    padding: 16px;
+    border-radius: 8px;
+    background-color: #f0f0f0;
+    text-align: center;
+    font-size: 16px;
+}
+
+.chat-container {
+    display: flex;
+  }
+  
+  .chat-list {
+    width: 25%; /* Ширина списка собеседников */
+    padding: 16px;
+  }
+  
+  .chat-window {
+    flex: 1; /* Оставшееся пространство занимает окно чата */
+    padding: 16px;
+  }
